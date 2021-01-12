@@ -1,0 +1,25 @@
+<meta charset="UTF-8">
+<script>
+    //Segunda foram (OK) - Usando function
+
+    function pularLinha(){
+        document.write("<br><br>");
+    }
+    function mostrar(resultado){
+        document.write(resultado);
+        pularLinha();
+    }
+
+    var idadeMinha = 22;
+    var idadeIrma = 20;
+    
+    mostrar ("Nossa diferença de idade é " + (idadeMinha - idadeIrma) + " anos");
+    
+    //Primeira forma (OK) - Sem function
+
+    var idadeMinha = 22;
+    var idadeIrma = 20;
+    var idadeDiferenca =(idadeMinha - idadeIrma);
+    document.write("Nossa diferença de idade é " + idadeDiferenca);
+
+</script>

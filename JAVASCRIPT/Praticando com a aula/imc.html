@@ -1,0 +1,95 @@
+<meta charset="UTF-8">
+<script>
+    //Calculando dois imc's
+
+    function pularLinha() {
+        document.write("<br><br>");
+  }
+
+  function mostra(frase) {
+        document.write (frase);
+        pularLinha();
+  }
+
+  function calculoImc(altura, peso) {
+        var imc = peso / (altura * altura);
+        mostra("O imc calculado é " + imc);
+  }
+
+    calculoImc(1.80, 80);
+    calculoImc(1.81, 70);
+    
+    //Retorno da função
+
+    function pularLinha() {
+        document.write("<br><br>");
+  }
+
+    function mostra(frase) {
+        document.write (frase);
+        pularLinha();
+  }
+
+    function calculoIMc(altura, peso){
+        var imc = peso / (altura * altura);
+        return imc;
+    }
+
+    var imcPeter = calculoImc (1.80, 80);  
+    var imcBeto = calculoImc (1.81, 70);
+
+    //Calculando duas variáveis juntas com return
+    
+    function pularLinha() {
+        document.write("<br><br>");
+  }
+
+    function mostra(frase) {
+        document.write (frase);
+        pularLinha();
+  }
+
+    function calculoIMc(altura, peso){
+          return peso / altura * altura;
+    }
+    
+    var pesoPeter = (1.80, 80);
+    var pesoBeto = (1.81, 70);
+    var pesoTotal = pesoPeter + pesoBeto;
+
+    document.write("A soma dos imc's é " + pesoTotal);
+
+    //Diminuindo as variáveis
+    
+    function pularLinha() {
+        document.write("<br><br>");
+  }
+
+    function mostra(frase) {
+        document.write (frase);
+        pularLinha();
+  }
+
+    function calculoIMc(altura, peso){
+          return peso / altura * altura;
+    }
+
+    var totalImc = calculoIMc(1.80,80) + calculoIMc(1.81,70);
+    document.write("A soma dos imc's é " + totalImc);
+
+
+    //Outra opção
+  //var pesoPeter = 80;
+  //var alturaPeter = 1.80;
+  //calculoImc(pesoPeter, alturaPeter);
+
+  //var pesoBeto = 70;
+  //var alturaBeto = 1.81;
+  //calculoImc(pesoBeto, alturaBeto);
+</script>
+
+
+
+
+
+

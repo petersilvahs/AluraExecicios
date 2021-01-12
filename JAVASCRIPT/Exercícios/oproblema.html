@@ -1,0 +1,17 @@
+<meta charset="UTF-8">
+<script>
+    //2020-1500/28
+    function pularLinha(){
+        document.write("<br>");
+    }
+    function mostrar(gerações){
+        document.write(gerações);
+        pularLinha();
+    }
+
+    var qAgora = 2020;    
+    var qAntes = 1500;
+    var hojeEmDia = (qAgora - qAntes)/28;
+    document.write("Se passaram " + Math.round(hojeEmDia) + " gerações");
+    //Com o (Math.round) foi arredondado para 19 gerações
+</script>
