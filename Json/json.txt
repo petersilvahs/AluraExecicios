@@ -1,0 +1,69 @@
+Json: 
+funcionalidade espefícida de ter um nome como chave principal, guardar e modificar esses dados dentro da string.
+
+let dicionario ={
+Gabriel: 21
+};
+
+console.log(dicionario.Gabriel); // acessa o nome do atributo como uma string
+console.log(dicionario["Gabriel"]); // consegue salvar em variáveis 
+
+let chave = "Gabriel"
+console.log(dicionario[chave]); //retorna o nome Gabriel. dicionario["Gabriel"]
+
+//Forma dinâmica
+
+let dicionario ={
+Gabriel: 21,
+Vitor: 24,
+};
+
+let chave = prompt("Qual idade você quer acessar?")
+console.log(dicionario[chave])
+
+//coloca vários nomes no console
+//quando repetimos a chave de um valor que já existe ele altera os dados ali dentro
+//consegue acessar como se fosse um array
+
+let dicionario = {};
+while(true){
+let chave = prompt("Nome da pessoa");
+let valor = prompt("idade da pessoa");
+
+dicionario[chave] = valor;
+
+console.log(dicionario);
+}
+
+//como acessar uma string vazia 
+
+let dicionario = {"":0};
+
+console.log(dicionario[""]);
+
+//json dentro de json
+
+let dicionario={
+"a": {
+	"b":0
+}
+};
+
+
+
+Em grupo:
+let dicionario = {};
+
+let chave = document.getElementById("chave");
+let valor = document.getElementById("valor");
+let btn = document.getElementById("salvar");
+
+btn.addEventListener('click', function() {
+    dicionario[chave.value] = valor.value;
+    console.log(dicionario);
+    chave.textContent = "";
+    valor.textContent = "";
+})
+
+
+Resolvido:
